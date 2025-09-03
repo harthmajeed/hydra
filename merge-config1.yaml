@@ -1,5 +1,7 @@
 server:
-  port: 80
+  port: 82
 users:
   - user1
   - user2
+log:
+  file: log1.txt
