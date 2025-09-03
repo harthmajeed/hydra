@@ -1,0 +1,7 @@
+user:
+  name: ${oc.env:USER}
+  home: /home/${oc.env:USER}
+
+database:
+  pass1: ${oc.env:PASSWORD1, my_pass1}
+  pass2: ${oc.env:PASSWORD2, default_pass}

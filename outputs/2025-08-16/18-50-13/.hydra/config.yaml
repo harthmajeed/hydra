@@ -1,0 +1,4 @@
+training:
+  batch_size: 128
+  nrof_epochs: 3
+  lr: 0.005
