@@ -1,0 +1,2 @@
+- tests=resnet50
+- loss_func=cosface

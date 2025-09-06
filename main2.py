@@ -7,3 +7,7 @@ def main(config: DictConfig) -> None:
 
 if __name__ == "__main__":
     main()
+
+#python .\main2.py -m tests=resnet18,resnet50 loss_func=arcface,cosface,softmax
+#python .\main2.py -m tests='glob(*)' loss_func='glob(*, exclude=soft*)'
+
