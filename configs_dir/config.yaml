@@ -3,6 +3,10 @@ defaults:
   - loss_func: arcface
   - config_merge
   - _self_
+  # - ovveride hydra/job_logging: disabled
 
 tests:
   optimizer: SGD
+
+# hydra:
+#   verbose: true
