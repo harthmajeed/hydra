@@ -1,17 +1,12 @@
 my_class:
   _target_: hydra_instantiate.MyClass
   name: World
-
 optimizer:
   _target_: torch.optim.Adam
-  _partial_: true
   lr: 0.001
-  betas: [0.9, 0.999]
-  eps: 1e-8
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1.0e-08
   weight_decay: 0
   amsgrad: false
-
-# training:
-#   batch_size: 128
-#   nrof_epochs: 30
-#   lr: 5e-4
