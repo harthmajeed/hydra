@@ -1,2 +1,0 @@
-- +tests=resnet18
-- tests.model=hydras
