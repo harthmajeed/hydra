@@ -29,7 +29,7 @@ class CIFAR10Model(nn.Module):
         self.head = head
 
     def forward(self, x: Tensor) -> Tensor:
-        x = x.repeat(1, 1, 1, 1)
+        #x = x.repeat(1, 1, 1, 1)
         x = self.backbone(x)
         x = self.adapter(x)
         x = self.head(x)
